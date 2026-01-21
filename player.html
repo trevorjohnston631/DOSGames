@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://v8.js-dos.com/latest/js-dos.css">
+    <script src="https://v8.js-dos.com/latest/js-dos.js"></script>
+    <style>#dos { width: 100vw; height: 100vh; }</style>
+</head>
+<body>
+    <div id="dos"></div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const gameFile = params.get("game");
+        if (gameFile) { Dos(document.getElementById("dos")).run(gameFile); }
+    </script>
+</body>
+</html>
